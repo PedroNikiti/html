@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para evento</title>
+</head>
+<body>
+    
+    <header></header>
+    <main>
+        <form action="" method="">
+            <fieldset>
+                <input type="text" name="nome" placeholder="Digite seu nome">
+                <input type="email" name="email" placeholder="Digite o seu E-mail" required>
+                <input type="password" name="senha" minlength="6" placeholder="Digite sua senha" required>
+                <input type="number" name="idade" min="15" max="60" placeholder="Digite sua idade">
+            </fieldset>
+            <fieldset>
+                <input type="radio" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" value="outro">
+                <label for="outro">Outro</label>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="interesse" value="programacao">
+                <label for="progamacao">Programação</label>
+                <input type="checkbox" name="interesse" value="redes">
+                <label for="redes">Redes</label>
+                <input type="checkbox" name="interesse" value="IA">
+                <label for="IA">Inteligencia Artificial</label>
+                <input type="checkbox" name="interesse" value="seguranca_de_informcoes">
+                <label for="seguranca_de_informcoes">Segurança de Informções</label>
+            </fieldset>
+            <fieldset>
+                <select name="cidade">
+                    <option value="" selected hidden>Escolha sua cidade</option>
+                    <option value="niteroi">Niterói</option>
+                    <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    <option value="sao_goncalo">São Gonçalo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input type="file" accept="image/jpeg image/png">
+            </fieldset>
+            <fieldset>
+                <textarea class="input" name="mensagem" placeholder="Descreva sobre o assunto"></textarea>
+                <label for="mensagem"> Mensagem </label>
+            </fieldset>
+            <input type="submit" class="btn-enviar" name="enviar" id="btn-enviar" value="Enviar">
+            <input type="reset" value="Limpar Formulario">
+        </form>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
